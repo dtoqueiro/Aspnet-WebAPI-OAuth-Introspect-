@@ -19,8 +19,8 @@ builder.Services.AddAuthentication(OAuth2IntrospectionDefaults.AuthenticationSch
     {
         options.IntrospectionEndpoint = "http://localhost:8080/auth/realms/aprime/protocol/openid-connect/token/introspect";
 
-        options.ClientId = "teste";
-        options.ClientSecret = "tzMhwuhPbVIlAocHDYwggtZoF3CUHlu7";
+        options.ClientId = "YOUR-CLIENT-ID";
+        options.ClientSecret = "YOUR-CLIENT-SECRET";
 
         // We are using introspection for JWTs so we need to override the default
         options.SkipTokensWithDots = false;
